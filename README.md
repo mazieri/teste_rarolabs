@@ -1,16 +1,17 @@
-# teste_rarolabs
+# TESTE RARO LABS
 
-A new Flutter project.
+### OBJETIVOS
+- [ ] Vagas disponíveis
+- [ ] Vagas ocupadas
+- [ ] Registrar entrada dos veículos
+- [ ] Registrar saída dos veículos
+- [ ] Qual vaga X veículos está ocupando
+- [ ] Histórico de entradas e saídas
+- [ ] Fechamento diario
 
-## Getting Started
+------------
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### TECNOLOGIAS USADAS
+- [Flutter](https://flutter.dev)
+- [MobX](https://pub.dev/packages/mobx)
+- [Get.It](https://pub.dev/packages/get_it)
