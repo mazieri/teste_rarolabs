@@ -76,16 +76,22 @@ class ControlPage extends StatelessWidget {
                       border: OutlineInputBorder(),
                     ),
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      parkingController.useParkingLot();
-                      parkingController.addToHistoryParkingLot();
-                      textController.clear();
+                  Observer(
+                    builder: (_) {
+                      return ElevatedButton(
+                        onPressed: parkingController.isValidLicense == true
+                            ? () {
+                                parkingController.useParkingLot();
+                                parkingController.addToHistoryParkingLot();
+                                textController.clear();
+                              }
+                            : null,
+                        child: const Center(
+                          child: Text("Marcar Entrada do Veículo"),
+                        ),
+                      );
                     },
-                    child: const Center(
-                      child: Text("Marcar Entrada do Veículo"),
-                    ),
-                  ),
+                  )
                 ],
               ),
             ),
