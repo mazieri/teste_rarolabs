@@ -69,6 +69,7 @@ class ControlPage extends StatelessWidget {
                         parkingController.parkingLotsNumber.toString());
                   }),
                   TextField(
+                    autocorrect: false,
                     controller: textController,
                     onChanged: parkingController.setLicenseValue,
                     decoration: const InputDecoration(
