@@ -1,12 +1,13 @@
 # TESTE RARO LABS
 
 ### OBJETIVOS
-- [ ] Vagas disponíveis
-- [ ] Vagas ocupadas
-- [ ] Registrar entrada dos veículos
+- [x] Vagas disponíveis
+- [x] Vagas ocupadas
+- [x] Registrar entrada dos veículos
 - [ ] Registrar saída dos veículos
-- [ ] Qual vaga X veículos está ocupando
-- [ ] Histórico de entradas e saídas
+- [x] Qual vaga X veículos está ocupando
+- [x] Histórico de entradas
+- [ ] Histórico de saídas
 - [ ] Fechamento diario
 
 ------------
@@ -15,3 +16,5 @@
 - [Flutter](https://flutter.dev)
 - [MobX](https://pub.dev/packages/mobx)
 - [Get.It](https://pub.dev/packages/get_it)
+- [MobX Code Gen](https://pub.dev/packages/mobx_codegen)
+- [Build Runner](https://pub.dev/packages/build_runner)
