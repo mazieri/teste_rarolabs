@@ -35,6 +35,9 @@ class ControlPage extends StatelessWidget {
                               parkingController.parkingLotsList[index]
                                   .toString(),
                               textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                fontSize: 25,
+                              ),
                             ),
                             Expanded(
                               child: Image.asset(
@@ -65,8 +68,15 @@ class ControlPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Observer(builder: (_) {
-                    return Text("Vagas Utilizadas: " +
-                        parkingController.parkingLotsNumber.toString());
+                    return Text(
+                      "Vagas Utilizadas: " +
+                          parkingController.parkingLotsNumber.toString(),
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        fontSize: 25,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    );
                   }),
                   TextField(
                     autocorrect: false,
