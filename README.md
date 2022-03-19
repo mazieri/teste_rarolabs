@@ -9,6 +9,9 @@
 - [x] Histórico de entradas
 - [x] Histórico de saídas
 - [ ] Fechamento diario
+- [x] Tema Claro
+- [x] Tema Escuro
+- [ ] Cores diferentes
 
 ------------
 
