@@ -12,6 +12,7 @@
 - [x] Tema Claro
 - [x] Tema Escuro
 - [ ] Cores diferentes
+- [ ] Persistência de Dados
 
 ------------
 
