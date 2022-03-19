@@ -4,10 +4,10 @@
 - [x] Vagas disponíveis
 - [x] Vagas ocupadas
 - [x] Registrar entrada dos veículos
-- [ ] Registrar saída dos veículos
+- [x] Registrar saída dos veículos
 - [x] Qual vaga X veículos está ocupando
 - [x] Histórico de entradas
-- [ ] Histórico de saídas
+- [x] Histórico de saídas
 - [ ] Fechamento diario
 
 ------------

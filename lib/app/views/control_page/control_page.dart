@@ -18,7 +18,6 @@ class ControlPage extends StatelessWidget {
           Expanded(
             child: Container(
                 padding: const EdgeInsets.all(10),
-                color: Colors.green,
                 child: Observer(builder: (_) {
                   return GridView.count(
                     scrollDirection: Axis.horizontal,
@@ -35,6 +34,7 @@ class ControlPage extends StatelessWidget {
                             Text(
                               parkingController.parkingLotsList[index]
                                   .toString(),
+                              textAlign: TextAlign.center,
                             ),
                             Expanded(
                               child: Image.asset(
@@ -61,7 +61,6 @@ class ControlPage extends StatelessWidget {
           Expanded(
             child: Container(
               padding: const EdgeInsets.all(10),
-              color: Colors.red,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [

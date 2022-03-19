@@ -15,11 +15,11 @@ class HistoryPage extends StatelessWidget {
       child: Observer(
         builder: (_) {
           return ListView.separated(
-            itemCount: historyController.historyParkingLotsList.length,
+            itemCount: historyController.historyParkingLotsListInAndOut.length,
             separatorBuilder: (context, index) => const Divider(),
             itemBuilder: (context, index) => ListTile(
               title: Text(
-                  "O Veículo de placa ${historyController.historyParkingLotsList[index].toUpperCase()}, entrou"),
+                  "O Veículo ${historyController.historyParkingLotsListInAndOut[index]}"),
             ),
           );
         },

@@ -5,14 +5,13 @@ part 'license_controller.g.dart';
 class LicenseController = _LicenseControllerBase with _$LicenseController;
 
 abstract class _LicenseControllerBase with Store {
-  _LicenseControllerBase() {
-    autorun((_) {
-      print(licenseValue);
-      print(parkingLotsNumber);
-      print("vagas ocupadas: $parkingLotsList");
-      print("historico: $historyParkingLotsList");
-    });
-  }
+  // _LicenseControllerBase() {
+  //   autorun((_) {
+  //     print(licenseValue);
+  //     print(isValidLicense);
+  //     print(historyParkingLotsListInAndOut);
+  //   });
+  // }
 
 // -----@observable-----
 
@@ -26,7 +25,7 @@ abstract class _LicenseControllerBase with Store {
   ObservableList parkingLotsList = [].asObservable();
 
   @observable
-  ObservableList historyParkingLotsList = [].asObservable();
+  ObservableList historyParkingLotsListInAndOut = [].asObservable();
 
 // -----@actions-----
 
@@ -42,14 +41,18 @@ abstract class _LicenseControllerBase with Store {
   @action
   removeParkingLot(value) {
     parkingLotsList.remove(value);
+    historyParkingLotsListInAndOut.add(value.toUpperCase() + " saiu");
     parkingLotsNumber--;
   }
 
   @action
   addToHistoryParkingLot() {
-    historyParkingLotsList.add(licenseValue);
+    historyParkingLotsListInAndOut.add(licenseValue.toUpperCase() + " entrou");
     licenseValue = "";
   }
 
 // -----@computed-----
+
+  @computed
+  bool get isValidLicense => licenseValue.length == 7;
 }

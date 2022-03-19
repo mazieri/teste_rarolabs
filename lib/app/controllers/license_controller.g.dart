@@ -9,6 +9,14 @@ part of 'license_controller.dart';
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$LicenseController on _LicenseControllerBase, Store {
+  Computed<bool>? _$isValidLicenseComputed;
+
+  @override
+  bool get isValidLicense =>
+      (_$isValidLicenseComputed ??= Computed<bool>(() => super.isValidLicense,
+              name: '_LicenseControllerBase.isValidLicense'))
+          .value;
+
   final _$licenseValueAtom = Atom(name: '_LicenseControllerBase.licenseValue');
 
   @override
@@ -56,20 +64,20 @@ mixin _$LicenseController on _LicenseControllerBase, Store {
     });
   }
 
-  final _$historyParkingLotsListAtom =
-      Atom(name: '_LicenseControllerBase.historyParkingLotsList');
+  final _$historyParkingLotsListInAndOutAtom =
+      Atom(name: '_LicenseControllerBase.historyParkingLotsListInAndOut');
 
   @override
-  ObservableList<dynamic> get historyParkingLotsList {
-    _$historyParkingLotsListAtom.reportRead();
-    return super.historyParkingLotsList;
+  ObservableList<dynamic> get historyParkingLotsListInAndOut {
+    _$historyParkingLotsListInAndOutAtom.reportRead();
+    return super.historyParkingLotsListInAndOut;
   }
 
   @override
-  set historyParkingLotsList(ObservableList<dynamic> value) {
-    _$historyParkingLotsListAtom
-        .reportWrite(value, super.historyParkingLotsList, () {
-      super.historyParkingLotsList = value;
+  set historyParkingLotsListInAndOut(ObservableList<dynamic> value) {
+    _$historyParkingLotsListInAndOutAtom
+        .reportWrite(value, super.historyParkingLotsListInAndOut, () {
+      super.historyParkingLotsListInAndOut = value;
     });
   }
 
@@ -126,7 +134,8 @@ mixin _$LicenseController on _LicenseControllerBase, Store {
 licenseValue: ${licenseValue},
 parkingLotsNumber: ${parkingLotsNumber},
 parkingLotsList: ${parkingLotsList},
-historyParkingLotsList: ${historyParkingLotsList}
+historyParkingLotsListInAndOut: ${historyParkingLotsListInAndOut},
+isValidLicense: ${isValidLicense}
     ''';
   }
 }
