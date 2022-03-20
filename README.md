@@ -8,11 +8,11 @@
 - [x] Qual vaga X veículos está ocupando
 - [x] Histórico de entradas
 - [x] Histórico de saídas
-- [ ] Fechamento diario
+- [x] Fechamento diario
 - [x] Tema Claro
 - [x] Tema Escuro
 - [ ] Cores diferentes
-- [ ] Persistência de Dados
+- [x] Persistência de Dados
 
 ------------
 
@@ -22,3 +22,4 @@
 - [Get.It](https://pub.dev/packages/get_it)
 - [MobX Code Gen](https://pub.dev/packages/mobx_codegen)
 - [Build Runner](https://pub.dev/packages/build_runner)
+- [Shared Preferences](https://pub.dev/packages/shared_preferences)

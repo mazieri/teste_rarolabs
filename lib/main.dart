@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 
 import 'app/controllers/controllers_exports.dart';
+import 'app/services/history_service.dart';
 import 'app/exports.dart';
 
-void main() {
-  GetIt getIt = GetIt.I;
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
 
+  GetIt getIt = GetIt.I;
   getIt.registerSingleton<LicenseController>(LicenseController());
+  getIt.registerLazySingleton<HistoryService>(() => HistoryService());
+
+  await HistoryService.init();
 
   runApp(const Start());
 }
