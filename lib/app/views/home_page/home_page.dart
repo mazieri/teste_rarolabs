@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get_it/get_it.dart';
-
 import 'package:teste_rarolabs/app/exports.dart';
-import '../../controllers/controllers_exports.dart';
-import '../../services/history_service.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,17 +11,11 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int paginaAtual = 0;
   late PageController pageController;
-  final historyService = GetIt.I.get<HistoryService>();
 
   @override
   void initState() {
     super.initState();
     pageController = PageController(initialPage: paginaAtual);
-    rememberHistory();
-  }
-
-  Future rememberHistory() async {
-    await historyService.loadHistory();
   }
 
   setPage(index) {
@@ -42,17 +32,12 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final parkingController = GetIt.I.get<LicenseController>();
-
     return Scaffold(
       floatingActionButtonLocation:
           FloatingActionButtonLocation.miniCenterFloat,
       floatingActionButton: paginaAtual == 1
           ? FloatingActionButton.extended(
-              onPressed: () {
-                parkingController.cleanHistoryParkingLotsListInAndOut();
-                historyService.cleanHistory();
-              },
+              onPressed: () {},
               enableFeedback: true,
               label: const Text("Fazer Fechamento"),
             )

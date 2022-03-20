@@ -129,17 +129,6 @@ mixin _$LicenseController on _LicenseControllerBase, Store {
   }
 
   @override
-  dynamic cleanHistoryParkingLotsListInAndOut() {
-    final _$actionInfo = _$_LicenseControllerBaseActionController.startAction(
-        name: '_LicenseControllerBase.cleanHistoryParkingLotsListInAndOut');
-    try {
-      return super.cleanHistoryParkingLotsListInAndOut();
-    } finally {
-      _$_LicenseControllerBaseActionController.endAction(_$actionInfo);
-    }
-  }
-
-  @override
   String toString() {
     return '''
 licenseValue: ${licenseValue},

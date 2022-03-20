@@ -51,11 +51,6 @@ abstract class _LicenseControllerBase with Store {
     licenseValue = "";
   }
 
-  @action
-  cleanHistoryParkingLotsListInAndOut() {
-    historyParkingLotsListInAndOut.clear();
-  }
-
 // -----@computed-----
 
   @computed
