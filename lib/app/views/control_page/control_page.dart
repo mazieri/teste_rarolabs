@@ -38,6 +38,7 @@ class ControlPage extends StatelessWidget {
                               parkingController.parkingLotsList[index]
                                   .toString(),
                               textAlign: TextAlign.center,
+                              key: const ValueKey("stringPlaca"),
                               style: const TextStyle(
                                 fontSize: 25,
                               ),
@@ -76,6 +77,7 @@ class ControlPage extends StatelessWidget {
                     return Text(
                       "Vagas Utilizadas: " +
                           parkingController.parkingLotsNumber.toString(),
+                      key: const ValueKey("contadorVagas"),
                       textAlign: TextAlign.center,
                       style: const TextStyle(
                         fontSize: 25,
