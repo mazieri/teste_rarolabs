@@ -3,6 +3,7 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_it/get_it.dart';
 
 import '../../controllers/controllers_exports.dart';
+import '../../services/history_service.dart';
 
 class ControlPage extends StatelessWidget {
   const ControlPage({Key? key}) : super(key: key);
@@ -10,6 +11,7 @@ class ControlPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final parkingController = GetIt.I.get<LicenseController>();
+    final historyController = GetIt.I.get<HistoryService>();
     TextEditingController textController = TextEditingController();
 
     return SafeArea(
@@ -46,10 +48,12 @@ class ControlPage extends StatelessWidget {
                               ),
                             ),
                             ElevatedButton(
-                              onPressed: () =>
-                                  parkingController.removeParkingLot(
-                                parkingController.parkingLotsList[index],
-                              ),
+                              onPressed: () {
+                                parkingController.removeParkingLot(
+                                  parkingController.parkingLotsList[index],
+                                );
+                                historyController.saveHistory();
+                              },
                               child: const Center(
                                 child: Text("Saída"),
                               ),
@@ -94,6 +98,7 @@ class ControlPage extends StatelessWidget {
                             ? () {
                                 parkingController.useParkingLot();
                                 parkingController.addToHistoryParkingLot();
+                                historyController.saveHistory();
                                 textController.clear();
                               }
                             : null,
