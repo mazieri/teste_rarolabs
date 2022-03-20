@@ -13,7 +13,7 @@
 - [x] Tema Escuro
 - [ ] Cores diferentes
 - [x] Persistência de Dados
-- [ ] Testes
+- [x] Testes
 
 ------------
 
