@@ -42,7 +42,7 @@ class ControlPage extends StatelessWidget {
                               textAlign: TextAlign.center,
                               key: const ValueKey("stringPlaca"),
                               style: const TextStyle(
-                                fontSize: 25,
+                                fontSize: 20,
                               ),
                             ),
                             Expanded(
