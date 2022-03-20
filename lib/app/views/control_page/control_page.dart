@@ -13,6 +13,8 @@ class ControlPage extends StatelessWidget {
     final parkingController = GetIt.I.get<LicenseController>();
     final historyController = GetIt.I.get<HistoryService>();
 
+    var themeMode = Theme.of(context).brightness;
+
     TextEditingController textController = TextEditingController();
 
     return SafeArea(
@@ -47,6 +49,9 @@ class ControlPage extends StatelessWidget {
                               child: Image.asset(
                                 "assets/car_top_shape.png",
                                 fit: BoxFit.contain,
+                                color: themeMode == Brightness.dark
+                                    ? Colors.white
+                                    : Colors.black,
                               ),
                             ),
                             ElevatedButton(
