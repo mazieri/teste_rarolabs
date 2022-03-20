@@ -1,7 +1,6 @@
 # TESTE [RARO LABS](https://rarolabs.com.br)
 
 ### OBJETIVOS
-- [x] Vagas disponíveis
 - [x] Vagas ocupadas
 - [x] Registrar entrada dos veículos
 - [x] Registrar saída dos veículos
