@@ -11,7 +11,7 @@
 - [x] Fechamento diario
 - [x] Tema Claro
 - [x] Tema Escuro
-- [ ] Cores diferentes
+- [x] Cores diferentes
 - [x] Persistência de Dados
 - [x] Testes
 

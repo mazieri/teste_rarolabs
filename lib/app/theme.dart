@@ -11,12 +11,14 @@ class AppTheme extends StatelessWidget {
       title: "SÓSEI",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // TODO: definir cores do app
-        // scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: const Color.fromARGB(255, 255, 255, 255),
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          foregroundColor: Color.fromARGB(255, 255, 255, 255),
+        ),
         colorScheme: const ColorScheme.light(
-          // primary: Colors.yellow,
+          primary: Color.fromARGB(255, 202, 18, 18),
           // primaryVariant: primaryVariant,
-          // secondary: Colors.white,
+          secondary: Color.fromARGB(255, 202, 18, 18),
           // secondaryVariant: secondaryVariant,
           // surface: Colors.black,
           // background: Colors.black,
@@ -30,9 +32,23 @@ class AppTheme extends StatelessWidget {
         ),
       ),
       darkTheme: ThemeData(
-        // scaffoldBackgroundColor: Colors.black,
+        scaffoldBackgroundColor: const Color.fromARGB(0, 0, 0, 0),
         colorScheme: const ColorScheme.dark(
-          // primary: Colors.white,
+          primary:
+              Color.fromARGB(255, 226, 189, 26), //destaques, botão, contorno
+          // primaryContainer: Color.fromARGB(255, 226, 189, 26),
+          secondary: Color.fromARGB(
+              255, 226, 189, 26), //texto de seleção, floating action button
+          // secondaryContainer: secondaryVariant,
+          // surface: Colors.white,
+          // background: Colors.white,
+          // error: error,
+          // onPrimary: onPrimary,
+          // onSecondary: onSecondary,
+          // onSurface: onSurface,
+          // onBackground: onBackground,
+          // onError: onError,
+
           brightness: Brightness.dark,
         ),
       ),
