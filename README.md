@@ -1,6 +1,17 @@
 # TESTE [RARO LABS](https://rarolabs.com.br)
 
+### ATALHOS
+
+- [OBJETIVOS](#objetivos)
+- [TECNOLOGIAS USADAS](#tecnologias-usadas)
+- [GIF APP DEMO](#gif-app-demo)
+- [INSTRUÇÕES PARA RODAR O APP](#instruções-para-rodar-o-app)
+- [INSTRUÇÕES PARA RODAR OS TESTES](#instruções-para-rodar-os-testes)
+
+------------
+
 ### OBJETIVOS
+
 - [x] Vagas ocupadas
 - [x] Registrar entrada dos veículos
 - [x] Registrar saída dos veículos
@@ -17,6 +28,7 @@
 ------------
 
 ### TECNOLOGIAS USADAS
+
 - [Flutter](https://flutter.dev)
 - [MobX](https://pub.dev/packages/mobx)
 - [Get.It](https://pub.dev/packages/get_it)
@@ -26,7 +38,13 @@
 
 ------------
 
-## Instruções de como rodar o código
+### GIF APP DEMO
+
+<img src="https://github.com/mazieri/img/blob/main/demo%20app%20raro%20labs.gif">
+
+------------
+
+### INSTRUÇÕES PARA RODAR O APP
 
 1. Instale o SDK do [Flutter](https://flutter.dev)
 2. Baixe e extraia ou clone o repostório para alguma pasta a sua escolha
@@ -34,9 +52,9 @@
 4. No seu terminal rode o comando ```flutter devices```, adicionando ```fvm``` caso precise, ele irá lhe mostrar os dispositivos capazes de rodar o código naquele momento, seja seu desktop, web ou algum emulador
 5. Agora, vá até a pasta "teste_rarolabs", estando dentro dela, para rodar é só executar diretamente o código ```flutter run``` ou caso use o [fvm](https://fvm.app) é ```fmv flutter run```, com esse comando ele irá escolher automaticamente um dos "devices" disponíveis, mas caso queira escolher por si mesmo é só adicionar depois do comando a tag ```-d``` seguindo do o identificador do dispositivo alvo, por exemplo, se for para rodar no chrome o comando ficaria assim ```-d chrome```, já no macOS ficaria assim ```-d macos``` e assim vai, o identificador é a informação que aparece logo após o nome do dispositivo ao usar o ```flutter devices```, no caso logo após a "1ª bolinha" 
 
-## Instruções de como rodar os testes
+### INSTRUÇÕES PARA RODAR OS TESTES
 
 1. Instale o SDK do [Flutter](https://flutter.dev)
 2. Baixe e extraia ou clone o repostório para alguma pasta a sua escolha
 3. Agora é só abrir a pasta no seu editor de código preferido e executar os testes ali mesmo... mas se quiser rodar direto de um terminal é só seguir as instruções da linha abaixo
-4. Vá até a pasta "teste_rarolabs", estando dentro dela, para rodar é só executar diretamente o código ```flutter test``` ou caso use o [fvm](https://fvm.app) é ```fmv flutter test```, feito isso, o código ira executar todos os testes contidos na pasta ```test```
+4. Vá até a pasta "teste_rarolabs", estando dentro dela, para rodar é só executar diretamente o código ```flutter test``` ou caso use o [fvm](https://fvm.app) é ```fvm flutter test```, feito isso, o código ira executar todos os testes contidos na pasta ```test```
