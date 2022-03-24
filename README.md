@@ -1,18 +1,15 @@
 # TESTE [RARO LABS](https://rarolabs.com.br)
 
 ### ATALHOS
-
-- [TESTE RARO LABS](#teste-raro-labs)
-    - [ATALHOS](#atalhos)
-    - [OBJETIVOS](#objetivos)
-    - [TECNOLOGIAS USADAS](#tecnologias-usadas)
-    - [GIF APP DEMO](#gif-app-demo)
-    - [INSTRUÇÕES PARA RODAR O APP](#instruções-para-rodar-o-app)
-    - [INSTRUÇÕES PARA RODAR OS TESTES](#instruções-para-rodar-os-testes)
+- [OBJETIVOS](#objetivos)
+- [TECNOLOGIAS USADAS](#tecnologias-usadas)
+- [GIF APP DEMO](#gif-app-demo)
+- [INSTRUÇÕES PARA RODAR O APP](#instruções-para-rodar-o-app)
+- [INSTRUÇÕES PARA RODAR OS TESTES](#instruções-para-rodar-os-testes)
 
 ------------
 
-### OBJETIVOS
+### [OBJETIVOS](#atalhos)
 
 - [x] Vagas ocupadas
 - [x] Registrar entrada dos veículos
@@ -29,7 +26,7 @@
 
 ------------
 
-### TECNOLOGIAS USADAS
+### [TECNOLOGIAS USADAS](#atalhos)
 
 - [Flutter](https://flutter.dev)
 - [MobX](https://pub.dev/packages/mobx)
@@ -40,13 +37,13 @@
 
 ------------
 
-### GIF APP DEMO
+### [GIF APP DEMO](#atalhos)
 
 <img src="https://github.com/mazieri/img/blob/main/demo%20app%20raro%20labs.gif">
 
 ------------
 
-### INSTRUÇÕES PARA RODAR O APP
+### [INSTRUÇÕES PARA RODAR O APP](#atalhos)
 
 1. Instale o SDK do [Flutter](https://flutter.dev)
 2. Baixe e extraia ou clone o repostório para alguma pasta a sua escolha
@@ -54,7 +51,7 @@
 4. No seu terminal rode o comando ```flutter devices```, adicionando ```fvm``` caso precise, ele irá lhe mostrar os dispositivos capazes de rodar o código naquele momento, seja seu desktop, web ou algum emulador
 5. Agora, vá até a pasta "teste_rarolabs", estando dentro dela, para rodar é só executar diretamente o código ```flutter run``` ou caso use o [fvm](https://fvm.app) é ```fvm flutter run```, com esse comando ele irá escolher automaticamente um dos "devices" disponíveis, mas caso queira escolher por si mesmo é só adicionar depois do comando a tag ```-d``` seguindo do o identificador do dispositivo alvo, por exemplo, se for para rodar no chrome o comando ficaria assim ```-d chrome```, já no macOS ficaria assim ```-d macos``` e assim vai, o identificador é a informação que aparece logo após o nome do dispositivo ao usar o ```flutter devices```, no caso logo após a "1ª bolinha" 
 
-### INSTRUÇÕES PARA RODAR OS TESTES
+### [INSTRUÇÕES PARA RODAR OS TESTES](#atalhos)
 
 1. Instale o SDK do [Flutter](https://flutter.dev)
 2. Baixe e extraia ou clone o repostório para alguma pasta a sua escolha
