@@ -2,11 +2,13 @@
 
 ### ATALHOS
 
-- [OBJETIVOS](#objetivos)
-- [TECNOLOGIAS USADAS](#tecnologias-usadas)
-- [GIF APP DEMO](#gif-app-demo)
-- [INSTRUÇÕES PARA RODAR O APP](#instruções-para-rodar-o-app)
-- [INSTRUÇÕES PARA RODAR OS TESTES](#instruções-para-rodar-os-testes)
+- [TESTE RARO LABS](#teste-raro-labs)
+    - [ATALHOS](#atalhos)
+    - [OBJETIVOS](#objetivos)
+    - [TECNOLOGIAS USADAS](#tecnologias-usadas)
+    - [GIF APP DEMO](#gif-app-demo)
+    - [INSTRUÇÕES PARA RODAR O APP](#instruções-para-rodar-o-app)
+    - [INSTRUÇÕES PARA RODAR OS TESTES](#instruções-para-rodar-os-testes)
 
 ------------
 
