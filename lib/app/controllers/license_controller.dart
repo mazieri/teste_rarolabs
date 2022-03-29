@@ -5,16 +5,6 @@ part 'license_controller.g.dart';
 class LicenseController = _LicenseControllerBase with _$LicenseController;
 
 abstract class _LicenseControllerBase with Store {
-  // _LicenseControllerBase() {
-  //   autorun((_) {
-  //     print(licenseValue);
-  //     print(isValidLicense);
-  //     print(historyParkingLotsListInAndOut);
-  //   });
-  // }
-
-// -----@observable-----
-
   @observable
   String licenseValue = "";
 
@@ -26,8 +16,6 @@ abstract class _LicenseControllerBase with Store {
 
   @observable
   ObservableList historyParkingLotsListInAndOut = [].asObservable();
-
-// -----@actions-----
 
   @action
   void setLicenseValue(String value) => licenseValue = value;
@@ -55,8 +43,6 @@ abstract class _LicenseControllerBase with Store {
   cleanHistoryParkingLotsListInAndOut() {
     historyParkingLotsListInAndOut.clear();
   }
-
-// -----@computed-----
 
   @computed
   bool get isValidLicense => licenseValue.length == 7;
