@@ -14,30 +14,34 @@ const RESOURCES = {
 "splash/img/light-1x.png": "509a565517c66af48e1315c7ab9e118b",
 "splash/splash.js": "c6a271349a0cd249bdb6d3c4d12f5dcf",
 "splash/style.css": "c8c9d901e6739bae6e89c3c9c044aa46",
-"index.html": "3936fc01d1e7224522dff297560efd6f",
-"/": "3936fc01d1e7224522dff297560efd6f",
-"main.dart.js": "96f05c4178f2f52c825643333716ae2c",
+"index.html": "dff149fce5f3843f5e52e271846cdbe7",
+"/": "dff149fce5f3843f5e52e271846cdbe7",
+"main.dart.js": "3e35ec7f255584ea4d215e939a9295a6",
+"flutter.js": "eb2682e33f25cd8f1fc59011497c35f8",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.json": "a69d0ce1cd3c56c2d531672c65d944b2",
-"assets/AssetManifest.json": "43c9b1dfc4ae1b88890f79022584db3e",
-"assets/NOTICES": "772bdc2cdcdd22dad8ca293728367b6f",
+"assets/AssetManifest.json": "55787412fe445ab72da25313ce4a9d79",
+"assets/NOTICES": "3c228c2172c7b31b15165cfa58f23633",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/fonts/MaterialIcons-Regular.otf": "7e7a6cccddf6d7b20012a548461d5d81",
+"assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
 "assets/assets/car_top_shape.png": "7a1fbf2718f0057ac234ef26a04731e8",
 "assets/assets/favicon.png": "f98e39dea0baad433fdde62bac94cc51",
-"assets/assets/logo.png": "28aac435e1e59246854178ad60617381"
+"assets/assets/logo.png": "28aac435e1e59246854178ad60617381",
+"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
+"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
+"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
+"canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-  "/",
-"main.dart.js",
+  "main.dart.js",
 "index.html",
 "assets/NOTICES",
 "assets/AssetManifest.json",
